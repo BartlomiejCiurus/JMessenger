@@ -27,7 +27,7 @@ class ConversationScreen extends JFrame {
 
     public ConversationScreen(String username, String contactName) {
         super("Conversation with " + contactName);
-        setLayout(new MigLayoąut());
+        setLayout(new MigLayout());
         this.username = username;
         this.contactName = contactName;
         setSize(new Dimension(500, 350));
