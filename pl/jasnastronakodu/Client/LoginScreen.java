@@ -58,7 +58,7 @@ class LoginScreen extends JFrame {
 
         };
         createAccountButton.addActionListener(createAccountButtonListener);
-        add(new JLabel(new ImageIcon(ImageIO.read(new URL("http://code-side.byethost17.com/images/NewLogo.png")))), "wrap");
+        add(new JLabel(new ImageIcon(ImageIO.read(new URL("http://jasnastronakodu.pl/images/NewLogo.png")))), "wrap");
         add(new JLabel(" "), "wrap,grow");
         add(new JLabel("Login:"), "split, gapright 31");
         add(loginField, "wrap");
