@@ -11,7 +11,7 @@ class CreateAccountServer extends Thread {
 
     private static boolean createAccount(String login, String password) {
         Account account = new Account(login, password);
-        File accountFile = new File(".\\src\\com\\byethost17\\codeside\\Server\\Accounts\\" + login);
+        File accountFile = new File(".\\src\\pl\\jasnastronakodu\\Server\\Accounts\\" + login);
         if (accountFile.exists())
             return false;
         else {

@@ -11,7 +11,7 @@ class LoginServer extends Thread {
     private static boolean checkLoginAndPassword(String login, String password) {
         System.out.println(login);
         System.out.println(password);
-        File usernameFile = new File(".\\src\\com\\byethost17\\codeside\\Server\\Accounts\\" + login);
+        File usernameFile = new File(".\\src\\pl\\jasnastronakodu\\Server\\Accounts\\" + login);
         if (usernameFile.exists()) {
             try {
                 Account account;

@@ -32,7 +32,7 @@ class GetContactsServer extends Thread {
         FileInputStream fis;
         ObjectInputStream ois;
         try {
-            fis = new FileInputStream(".\\src\\com\\byethost17\\codeside\\Server\\Accounts\\" + username);
+            fis = new FileInputStream(".\\src\\pl\\jasnastronakodu\\Server\\Accounts\\" + username);
             ois = new ObjectInputStream(fis);
             Account account = (Account) ois.readObject();
             fis.close();

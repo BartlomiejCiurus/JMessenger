@@ -22,9 +22,9 @@ public class Account implements Serializable {
     }
 
     public static String historyFileName(String firstUsername, String secondUsername) {
-        String historyFileName = ".\\src\\com\\byethost17\\codeside\\Server\\History\\" + firstUsername + secondUsername + ".txt";
+        String historyFileName = ".\\src\\pl\\jasnastronakodu\\Server\\History\\" + firstUsername + secondUsername + ".txt";
         if (firstUsername.compareTo(secondUsername) > 0)
-            historyFileName = ".\\src\\com\\byethost17\\codeside\\Server\\History\\" + secondUsername + firstUsername + ".txt";
+            historyFileName = ".\\src\\pl\\jasnastronakodu\\Server\\History\\" + secondUsername + firstUsername + ".txt";
         return historyFileName;
     }
 

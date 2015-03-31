@@ -33,9 +33,9 @@ class AddContactServer extends Thread {
                     usernameAndContact = name.split(" ");
                 DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
                 assert usernameAndContact != null;
-                File file = new File(".\\src\\com\\byethost17\\codeside\\Server\\Accounts\\" + usernameAndContact[1].trim());
+                File file = new File(".\\src\\pl\\jasnastronakodu\\Server\\Accounts\\" + usernameAndContact[1].trim());
                 if (file.exists()) {
-                    File usernameFile = new File(".\\src\\com\\byethost17\\codeside\\Server\\Accounts\\" + usernameAndContact[0]);
+                    File usernameFile = new File(".\\src\\pl\\jasnastronakodu\\Server\\Accounts\\" + usernameAndContact[0]);
                     ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(usernameFile));
                     Account acc = (Account) objectInputStream.readObject();
                     acc.addContact(usernameAndContact[1]);

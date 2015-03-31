@@ -1,17 +1,17 @@
 package pl.jasnastronakodu.Client;
 
-import net.miginfocom.swing.MigLayout;
+        import net.miginfocom.swing.MigLayout;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.net.URL;
+        import javax.imageio.ImageIO;
+        import javax.swing.*;
+        import java.awt.*;
+        import java.awt.event.ActionEvent;
+        import java.awt.event.ActionListener;
+        import java.io.DataInputStream;
+        import java.io.IOException;
+        import java.io.PrintWriter;
+        import java.net.Socket;
+        import java.net.URL;
 
 class LoginScreen extends JFrame {
 

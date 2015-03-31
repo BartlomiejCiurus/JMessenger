@@ -6,10 +6,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 
-/**
- * @author Alvin Alexander
- * @author Bartlomiej Ciurus
- */
+
 public class ImageListCellRenderer implements ListCellRenderer {
 
     public Component getListCellRendererComponent(JList jlist,
@@ -26,7 +23,7 @@ public class ImageListCellRenderer implements ListCellRenderer {
         } else {
             ImageIcon image = null;
             try {
-                image = new ImageIcon(ImageIO.read(new URL("http://code-side.byethost17.com/images/user.png")));
+                image = new ImageIcon(ImageIO.read(new URL("http://jasnastronakodu.pl/images/user.png")));
             } catch (IOException e) {
                 e.printStackTrace();
             }

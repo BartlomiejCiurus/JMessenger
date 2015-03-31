@@ -27,7 +27,7 @@ class DeleteContactServer extends Thread {
                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 String name = in.readLine();
                 String[] usernameAndContact = name.split(" ");
-                File usernameFile = new File(".\\src\\com\\byethost17\\codeside\\Server\\Accounts\\" + usernameAndContact[0]);
+                File usernameFile = new File(".\\src\\pl\\jasnastronakodu\\Server\\Accounts\\" + usernameAndContact[0]);
                 ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(usernameFile));
                 Account acc = (Account) objectInputStream.readObject();
                 acc.deleteContact(usernameAndContact[1].trim());
