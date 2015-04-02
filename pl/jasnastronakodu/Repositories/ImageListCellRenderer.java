@@ -15,12 +15,6 @@ public class ImageListCellRenderer implements ListCellRenderer {
                                                   boolean isSelected,
                                                   boolean cellHasFocus) {
 
-        if (value instanceof JPanel) {
-            Component component = (Component) value;
-            component.setForeground(Color.white);
-            component.setBackground(isSelected ? Color.blue : Color.white);
-            return component;
-        } else {
             ImageIcon image = null;
             try {
                 image = new ImageIcon(ImageIO.read(new URL("http://jasnastronakodu.pl/images/user.png")));
@@ -35,4 +29,3 @@ public class ImageListCellRenderer implements ListCellRenderer {
             return panel;
         }
     }
-}
