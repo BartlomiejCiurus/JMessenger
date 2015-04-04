@@ -19,10 +19,8 @@ import java.net.Socket;
 class MessengerMainScreen extends JFrame {
 
     private final String username;
-
     private final JList list;
     private final DefaultListModel model;
-
 
     public MessengerMainScreen(final String username, String password) {
         super("JMessenger");
